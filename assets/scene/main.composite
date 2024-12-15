@@ -2179,8 +2179,8 @@
       "data": {
         "0": {
           "json": {
-            "name": "New Scene",
-            "description": "A large office surrounding by green, with an imposing entrance and conference rooms.",
+            "name": "decentraland-fisrt-scene",
+            "description": "A large office surrounding by green, with an imposing entrance and conference rooms. It contains a NPC cat to interact with.",
             "thumbnail": "",
             "categories": [],
             "author": "SDK",

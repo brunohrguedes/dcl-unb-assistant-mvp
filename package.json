@@ -24,6 +24,7 @@
     "trailingComma": "none"
   },
   "dependencies": {
+    "@dcl/asset-packs": "^2.1.1",
     "dcl-npc-toolkit": "^1.5.0"
   }
 }

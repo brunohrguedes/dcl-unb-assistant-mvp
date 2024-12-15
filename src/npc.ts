@@ -11,7 +11,7 @@ export let myNPC = npc.create(
   // NPCData Object
   {
     type: npc.NPCType.CUSTOM,
-    model: 'models/npc.glb',
+    model: 'assets/builder/cat/HWN20_Cat.glb',
     onActivate: () => {
       console.log('npc activated')
     }

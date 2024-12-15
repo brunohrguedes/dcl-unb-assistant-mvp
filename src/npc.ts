@@ -1,6 +1,8 @@
 import * as npc from 'dcl-npc-toolkit'
 import { Vector3, Quaternion } from '@dcl/sdk/math'
 
+import { WelcomeDialog } from './dialog'
+
 export let myNPC = npc.create(
   // TransformType
   {
@@ -13,7 +15,8 @@ export let myNPC = npc.create(
     type: npc.NPCType.CUSTOM,
     model: 'assets/builder/cat/HWN20_Cat.glb',
     onActivate: () => {
-      console.log('npc activated')
-    }
+      npc.talk(myNPC, WelcomeDialog, 0)
+    },
+    onlyETrigger: true
   }
 )

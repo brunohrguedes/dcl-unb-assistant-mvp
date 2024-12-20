@@ -3,7 +3,7 @@ import { Vector3, Quaternion } from '@dcl/sdk/math'
 
 import { WelcomeDialog } from './dialog'
 
-export let myNPC = npc.create(
+export let catNpc = npc.create(
   // TransformType
   {
     position: Vector3.create(163.75, 18.0, 192.25),
@@ -15,7 +15,7 @@ export let myNPC = npc.create(
     type: npc.NPCType.CUSTOM,
     model: 'assets/builder/cat/HWN20_Cat.glb',
     onActivate: () => {
-      npc.talk(myNPC, WelcomeDialog, 0)
+      npc.talk(catNpc, WelcomeDialog, 0)
     },
     onlyETrigger: true
   }

@@ -1,5 +1,5 @@
+import { Quaternion, Vector3 } from '@dcl/sdk/math'
 import * as npc from 'dcl-npc-toolkit'
-import { Vector3, Quaternion } from '@dcl/sdk/math'
 
 import { WelcomeDialog } from './dialog'
 

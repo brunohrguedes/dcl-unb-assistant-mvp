@@ -90,33 +90,12 @@
         "serializationType": "transform"
       },
       "data": {
-        "513": {
-          "json": {
-            "position": {
-              "x": 163.75,
-              "y": 18,
-              "z": 192.25
-            },
-            "scale": {
-              "x": 1,
-              "y": 1,
-              "z": 1
-            },
-            "rotation": {
-              "x": 0,
-              "y": 0,
-              "z": 0,
-              "w": 1
-            },
-            "parent": 0
-          }
-        },
         "515": {
           "json": {
             "position": {
-              "x": 160,
-              "y": 0,
-              "z": 160
+              "x": 107.53221130371094,
+              "y": 1.1193369297310234e-14,
+              "z": 181.5287322998047
             },
             "scale": {
               "x": 1,
@@ -164,13 +143,6 @@
         "protocolBuffer": "PBGltfContainer"
       },
       "data": {
-        "513": {
-          "json": {
-            "src": "assets/builder/cat/HWN20_Cat.glb",
-            "visibleMeshesCollisionMask": 1,
-            "invisibleMeshesCollisionMask": 2
-          }
-        },
         "515": {
           "json": {
             "src": "assets/landscape/landscape.glb",
@@ -200,11 +172,6 @@
         "serializationType": "map"
       },
       "data": {
-        "513": {
-          "json": {
-            "value": "Cat"
-          }
-        },
         "515": {
           "json": {
             "value": "landscape.glb"
@@ -230,9 +197,9 @@
         "serializationType": "map"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
-            "gizmo": 0
+            "gizmo": 3
           }
         }
       }
@@ -2180,7 +2147,7 @@
         "0": {
           "json": {
             "name": "decentraland-fisrt-scene",
-            "description": "A large office surrounding by green, with an imposing entrance and conference rooms. It contains a NPC cat to interact with.",
+            "description": "A large office surrounding by green, with an imposing entrance and conference rooms.",
             "thumbnail": "",
             "categories": [],
             "author": "SDK",
@@ -3872,8 +3839,7 @@
                 "open": true,
                 "children": [
                   515,
-                  516,
-                  513
+                  516
                 ]
               },
               {
@@ -3890,10 +3856,6 @@
               },
               {
                 "entity": 516,
-                "children": []
-              },
-              {
-                "entity": 513,
                 "children": []
               }
             ]
@@ -4117,71 +4079,6 @@
       }
     },
     {
-      "name": "asset-packs::Actions",
-      "jsonSchema": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "serializationType": "int32"
-          },
-          "value": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "serializationType": "utf8-string"
-                },
-                "type": {
-                  "type": "string",
-                  "serializationType": "utf8-string"
-                },
-                "jsonPayload": {
-                  "type": "string",
-                  "serializationType": "utf8-string"
-                },
-                "allowedInBasicView": {
-                  "type": "boolean",
-                  "serializationType": "optional",
-                  "optionalJsonSchema": {
-                    "type": "boolean",
-                    "serializationType": "boolean"
-                  }
-                },
-                "basicViewId": {
-                  "type": "string",
-                  "serializationType": "optional",
-                  "optionalJsonSchema": {
-                    "type": "string",
-                    "serializationType": "utf8-string"
-                  }
-                }
-              },
-              "serializationType": "map"
-            },
-            "serializationType": "array"
-          }
-        },
-        "serializationType": "map"
-      },
-      "data": {
-        "513": {
-          "json": {
-            "id": 1,
-            "value": [
-              {
-                "name": "Hello",
-                "type": "show_text",
-                "jsonPayload": "{\"text\":\"Hello, world!\",\"hideAfterSeconds\":5,\"font\":0,\"fontSize\":10,\"textAlign\":4}"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
       "name": "asset-packs::Counter",
       "jsonSchema": {
         "type": "object",
@@ -4223,9 +4120,6 @@
         "serializationType": "map"
       },
       "data": {
-        "513": {
-          "json": {}
-        },
         "515": {
           "json": {}
         },

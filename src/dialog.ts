@@ -1,3 +1,4 @@
+import { executeTask } from '@dcl/sdk/ecs'
 import { Dialog } from 'dcl-npc-toolkit'
 import { getWeather } from './weather'
 
@@ -15,15 +16,22 @@ export let WelcomeDialog: Dialog[] = [
     isQuestion: true,
     buttons: [
       {
-        label: 'Sim!',
-        goToDialog: 'showTemp',
-        triggeredActions: async () => {
-          weather = await getWeather()
-        }
+        label: 'Não, obrigado',
+        goToDialog: 5
       },
       {
-        label: 'Não, obrigado',
-        goToDialog: 'endDialog'
+        label: 'Sim!',
+        goToDialog: 3,
+        triggeredActions: () => {
+          executeTask(async () => {
+            try {
+              weather = await getWeather()
+              console.log(weather)
+            } catch (error) {
+              console.log('error ' + error)
+            }
+          })
+        }
       }
     ]
   },

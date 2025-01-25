@@ -11,7 +11,8 @@
   },
   "devDependencies": {
     "@dcl/js-runtime": "7.6.7",
-    "@dcl/sdk": "^7.7.1"
+    "@dcl/sdk": "^7.7.1",
+    "@types/node": "^22.10.10"
   },
   "engines": {
     "node": ">=16.0.0",
@@ -26,6 +27,7 @@
   "dependencies": {
     "@dcl-sdk/utils": "^1.2.8",
     "@dcl/asset-packs": "^2.1.1",
-    "dcl-npc-toolkit": "^1.5.0"
+    "dcl-npc-toolkit": "^1.5.0",
+    "openmeteo": "^1.1.4"
   }
 }

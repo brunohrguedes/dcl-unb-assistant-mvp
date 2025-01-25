@@ -13,7 +13,7 @@ export let catNpc = npc.create(
   // NPCData Object
   {
     type: npc.NPCType.CUSTOM,
-    model: 'assets/builder/cat/HWN20_Cat.glb',
+    model: 'assets/builder/cat/black_cat.glb',
     onActivate: () => {
       npc.talk(catNpc, WelcomeDialog, 0)
     },

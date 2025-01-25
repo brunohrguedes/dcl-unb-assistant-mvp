@@ -6,7 +6,7 @@ import { WelcomeDialog } from './dialog'
 export let catNpc = npc.create(
   // TransformType
   {
-    position: Vector3.create(163.75, 18.0, 192.25),
+    position: Vector3.create(163.75, 18.18, 192.25),
     rotation: Quaternion.Zero(),
     scale: Vector3.create(1, 1, 1)
   },

@@ -10,9 +10,9 @@
     "upgrade-sdk:next": "npm install --save-dev @dcl/sdk@next"
   },
   "devDependencies": {
-    "@dcl/js-runtime": "7.7.1",
-    "@dcl/sdk": "^7.7.1",
-    "@types/node": "^22.10.10"
+    "@dcl/js-runtime": "7.7.4",
+    "@dcl/sdk": "^7.7.4",
+    "@types/node": "^22.13.1"
   },
   "engines": {
     "node": ">=16.0.0",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@dcl-sdk/utils": "^1.2.8",
-    "@dcl/asset-packs": "^2.1.1",
+    "@dcl/asset-packs": "^2.1.2",
     "dcl-npc-toolkit": "^1.5.0",
     "openmeteo": "^1.1.4"
   }

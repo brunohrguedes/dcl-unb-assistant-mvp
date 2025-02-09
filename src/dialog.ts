@@ -1,8 +1,7 @@
-import { executeTask } from '@dcl/sdk/ecs'
 import { Dialog } from 'dcl-npc-toolkit'
-import { getWeather } from './weather'
+import { getTemperature } from './services/getTemperature'
 
-let weather = 0
+let temperature
 
 export let WelcomeDialog: Dialog[] = [
   {
@@ -17,27 +16,26 @@ export let WelcomeDialog: Dialog[] = [
     buttons: [
       {
         label: 'Não, obrigado',
-        goToDialog: 5
+        goToDialog: 7
       },
       {
         label: 'Sim!',
         goToDialog: 3,
-        triggeredActions: () => {
-          executeTask(async () => {
-            try {
-              weather = await getWeather()
-              console.log(weather)
-            } catch (error) {
-              console.log('error ' + error)
-            }
-          })
+        triggeredActions: async () => {
+          await getTemperature().then((temp) => (temperature = temp))
         }
       }
     ]
   },
   {
     name: 'showTemp',
-    text: 'A temperatura atual é ' + weather + ' °C'
+    text: 'Deixe-me ver... estou buscando a temperatura atual do Campus da UnB...'
+  },
+  {
+    text: 'Ah! Acho que já consegui'
+  },
+  {
+    text: 'A temperatura atual é ' + temperature + ' °C'
   },
   {
     text: 'Volte quando quiser mais informações!',

@@ -31,6 +31,8 @@ export let WelcomeDialog: Dialog[] = [
             console.log('Temperatura atual: ', current.temperature_2m)
 
             temperature = current.temperature_2m
+
+            WelcomeDialog[5].text = `A temperatura atual é ${temperature} °C`
           })
         }
       }

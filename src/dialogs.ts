@@ -56,3 +56,58 @@ export let WelcomeDialog: Dialog[] = [
     isEndOfDialog: true
   }
 ]
+
+export let SemestersDialog: Dialog[] = [
+  {
+    text: 'Olá! Sou o assistente virtual da Graduação da UnB! Gostaria de saber qual é o período de aulas de algum semestre?',
+    isQuestion: true,
+    buttons: [
+      {
+        label: '2024.2',
+        goToDialog: 1
+      },
+      {
+        label: '2025.1',
+        goToDialog: 3
+      }
+    ]
+  },
+  {
+    text: 'O período de aulas do semestre 2024.2 começou em 14/10/2024 e irá terminar em 22/02/2025.'
+  },
+  {
+    text: 'Gostaria de saber algo mais?',
+    isQuestion: true,
+    buttons: [
+      {
+        label: 'Não, obrigado!',
+        goToDialog: 5
+      },
+      {
+        label: 'Sim!',
+        goToDialog: 0
+      }
+    ]
+  },
+  {
+    text: 'O período de aulas do semestre 2025.1 começa em 24/03/2025 e termina em 26/07/2025. As matrículas poderão ser realizadas online pelo SIGAA de 06h de 27/02 até 23h59 de 05/03.'
+  },
+  {
+    text: 'Gostaria de saber algo mais?',
+    isQuestion: true,
+    buttons: [
+      {
+        label: 'Sim!',
+        goToDialog: 0
+      },
+      {
+        label: 'Não, obrigado!',
+        goToDialog: 5
+      }
+    ]
+  },
+  {
+    text: 'Até logo! Volte quando quiser mais informações.',
+    isEndOfDialog: true
+  }
+]

@@ -11,7 +11,7 @@ export let WelcomeDialog: Dialog[] = [
     text: 'É um prazer falar com você!'
   },
   {
-    text: 'Você gostaria de saber qual é a temperatura atual no Campus Dary Ribeiro da UnB?',
+    text: 'Você gostaria de saber qual é a temperatura atual no Campus Darcy Ribeiro da UnB?',
     isQuestion: true,
     buttons: [
       {

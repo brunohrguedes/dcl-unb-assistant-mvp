@@ -1,7 +1,6 @@
 import { Quaternion, Vector3 } from '@dcl/sdk/math'
 import * as npc from 'dcl-npc-toolkit'
-
-import { WelcomeDialog } from './dialogs'
+import { WeatherDialog } from './dialogs'
 
 export let catNpc = npc.create(
   // TransformType
@@ -15,7 +14,7 @@ export let catNpc = npc.create(
     type: npc.NPCType.CUSTOM,
     model: 'assets/builder/cat/black_cat.glb',
     onActivate: () => {
-      npc.talk(catNpc, WelcomeDialog, 0)
+      npc.talk(catNpc, WeatherDialog, 0)
     },
     onlyETrigger: true
   }

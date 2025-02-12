@@ -1,9 +1,15 @@
 import { executeTask } from '@dcl/sdk/ecs'
 import { Dialog } from 'dcl-npc-toolkit'
 
+export let WelcomeDialog: Dialog[] = [
+  {
+    text: 'Hello, World!'
+  }
+]
+
 let temperature
 
-export let WelcomeDialog: Dialog[] = [
+export let WeatherDialog: Dialog[] = [
   {
     text: 'Olá, estranho!'
   },
@@ -27,12 +33,13 @@ export let WelcomeDialog: Dialog[] = [
               'https://api.open-meteo.com/v1/forecast?latitude=-15.76&longitude=-47.87&current=temperature_2m'
             )
             const { current } = await response.json()
+            console.log(current)
 
             console.log('Temperatura atual: ', current.temperature_2m)
 
             temperature = current.temperature_2m
 
-            WelcomeDialog[5].text = `A temperatura atual é ${temperature} °C`
+            WeatherDialog[5].text = `A temperatura atual é ${temperature} graus Celsius!`
           })
         }
       }
@@ -46,7 +53,7 @@ export let WelcomeDialog: Dialog[] = [
     text: 'Ah! Acho que já consegui'
   },
   {
-    text: 'A temperatura atual é ' + temperature + ' °C'
+    text: 'A temperatura atual é ' + temperature + ' graus Celsius!'
   },
   {
     text: 'Volte quando quiser mais informações!',

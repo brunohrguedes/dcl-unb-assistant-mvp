@@ -1,6 +1,6 @@
-# SDK7 Office Template
+# SDK7 Decentraland UnB Assistant MVP
 
-A large template scene with default art, meant for using in Worlds, 10 x 10 parcels. The scene include a interactive NPC.
+A large office template scene with default art, meant for using in Worlds, 10 x 10 parcels. The scene include a interactive NPC.
 
 ## Try it out
 

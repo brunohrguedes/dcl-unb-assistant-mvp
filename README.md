@@ -1,6 +1,6 @@
 # SDK7 Office Template
 
-A large template scene with default art, meant for using in Worlds, 10 x 10 parcels. The scene doesn't include anything interactive.
+A large template scene with default art, meant for using in Worlds, 10 x 10 parcels. The scene include a interactive NPC.
 
 ## Try it out
 
@@ -14,11 +14,16 @@ npm install @dcl/sdk@next
 
 **Previewing the scene**
 
-1. Download this full repository from [sdk7-goerli-plaza](https://github.com/decentraland/sdk7-goerli-plaza/tree/main), including this and several other example scenes on SDK7.
+1. Clone this repository:
+
+```bash
+git clone https://github.com/brunohrguedes/dcl-unb-assistant-mvp.git
+cd dcl-unb-assistant-mvp
+```
 
 2. Install the [Decentraland Editor](https://docs.decentraland.org/creator/development-guide/sdk7/editor/)
 
-3. Open a Visual Studio Code window on this scene's root folder. Not on the root folder of the whole repo, but instead on this sub-folder that belongs to the scene.
+3. Open a Visual Studio Code window on this scene's root folder.
 
 4. Open the Decentraland Editor tab, and press **Run Scene**
 

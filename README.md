@@ -4,16 +4,6 @@ A large office template scene with default art, meant for using in Worlds, 10 x 
 
 ## Try it out
 
-**Install the CLI**
-
-Download and install the Decentraland CLI by running the following command inside this scene root directory:
-
-```bash
-npm install @dcl/sdk@next
-```
-
-**Previewing the scene**
-
 1. Clone this repository:
 
 ```bash
@@ -21,17 +11,32 @@ git clone https://github.com/brunohrguedes/dcl-unb-assistant-mvp.git
 cd dcl-unb-assistant-mvp
 ```
 
-2. Install the [Decentraland Editor](https://docs.decentraland.org/creator/development-guide/sdk7/editor/)
+**Install dependencies**
 
-3. Open a Visual Studio Code window on this scene's root folder.
+Download and install the project dependencies by running the following command inside this scene root directory:
 
-4. Open the Decentraland Editor tab, and press **Run Scene**
-
-Alternatively, you can use the command line. Inside this scene root directory run:
-
+```bash
+npm install
 ```
+
+Install dcl/sdk-commands:
+
+```bash
+npm install -g @dcl/sdk-commands
+```
+
+**Previewing the scene**
+
+Run the following command inside the project's root folder:
+
+```bash
 npm run start
 ```
+
+The scene will open in your browser when it's ready.
+
+On Windows, you can also install the [Decentraland Editor](https://docs.decentraland.org/creator/development-guide/sdk7/editor/) and open a Visual Studio Code window on this scene's root folder. Then open the Decentraland Editor tab, and press **Run Scene**.
+
 
 ## Copyright info
 
